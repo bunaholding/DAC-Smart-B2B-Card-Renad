@@ -771,33 +771,33 @@
     <p class="lead">Reach our Executive Office directly, or leave your details and we'll come to you.</p>
 
     <div class="md-card">
-      <div class="md-avatar">JC</div>
+      <div class="md-avatar">RI</div>
       <div class="md-info">
-        <h3>Jam Carlo Canicosa</h3>
-        <div class="role">Proposal Engineer<br>Executive Office, DAC Group</div>
+        <h3>Renad Issa</h3>
+        <div class="role">Executive Strategy & Development Associate<br>Executive Office, DAC Group</div>
       </div>
     </div>
 
     <div class="contact-rows">
-      <a class="contact-row" href="tel:+966561531469">
+      <a class="contact-row" href="tel:+966531183241">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
         <div class="txt">
           <div class="k">Phone</div>
-          <div class="v">+966 56 153 1469</div>
+          <div class="v">+966 53 118 3241</div>
         </div>
       </a>
-      <a class="contact-row" href="mailto:jcc@dhamangroup.com">
+      <a class="contact-row" href="mailto:rhi@dhamangroup.com">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></div>
         <div class="txt">
           <div class="k">Email</div>
-          <div class="v">jcc@dhamangroup.com</div>
+          <div class="v">rhi@dhamangroup.com</div>
         </div>
       </a>
     </div>
 
     <button class="btn-save" onclick="saveContact()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
-      Save Jam's contact
+      Save Renad's contact
     </button>
 
     <div class="divider-text">Or send me your details</div>
@@ -806,7 +806,7 @@
       <input type="text" id="lead-name" placeholder="Your name" required>
       <input type="tel" id="lead-phone" placeholder="Phone number" required>
       <input type="email" id="lead-email" placeholder="Email address" required>
-      <button type="submit" class="btn-send">Send my details to Jam</button>
+      <button type="submit" class="btn-send">Send my details to Renad</button>
     </form>
     <div id="lead-status"></div>
   </section>
@@ -1081,12 +1081,12 @@ function saveContact(){
   const vcard = [
     'BEGIN:VCARD',
     'VERSION:3.0',
-    'N:Canicosa;Jam Carlo;;;',
-    'FN:Jam Carlo Canicosa',
+    'N:Issa;Renad;;;',
+    'FN:Renad Issa',
     'ORG:DAC Group',
-    'TITLE:Proposal Engineer',
-    'TEL;TYPE=CELL:+966561531469',
-    'EMAIL:jcc@dhamangroup.com',
+    'TITLE:Executive Strategy & Development Associate',
+    'TEL;TYPE=CELL:+966531183241',
+    'EMAIL:rhi@dhamangroup.com',
     'ADR;TYPE=WORK:;;Sumou Tower, King Abdulaziz Road, 4th Floor;Jeddah;;23613;Saudi Arabia',
     'URL:https://dhamangroup.com',
     'END:VCARD'
@@ -1095,7 +1095,7 @@ function saveContact(){
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'Jam_Carlo_Canicosa_DAC.vcf';
+  a.download = 'Renad_Issa_DAC.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -1111,16 +1111,16 @@ document.getElementById('lead-form').addEventListener('submit', function(e){
 
   const subject = encodeURIComponent('New connection request via DAC Group');
   const body = encodeURIComponent(
-    'Hi Jam,\n\nSomeone would like to connect with you via the DAC Group site.\n\n' +
+    'Hi Renad,\n\nSomeone would like to connect with you via the DAC Group site.\n\n' +
     'Name: ' + name + '\n' +
     'Phone: ' + phone + '\n' +
     'Email: ' + email + '\n\n' +
     'Please reach out at your convenience.'
   );
-  const mailto = 'mailto:jcc@dhamangroup.com?subject=' + subject + '&body=' + body;
+  const mailto = 'mailto:rhi@dhamangroup.com?subject=' + subject + '&body=' + body;
 
   const status = document.getElementById('lead-status');
-  status.textContent = 'Opening your email app to send these details to Jam…';
+  status.textContent = 'Opening your email app to send these details to Renad…';
   status.classList.add('show');
 
   window.location.href = mailto;
